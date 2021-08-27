@@ -1,0 +1,95 @@
+/*
+ * MOBILE ( < 768px) 768보다 작으면 모바일 --------------------------------
+ *
+ * fixture -----------------> sm (small)
+ * Number of Columns ------> 4
+ * gutter -----------------> 20px
+ * margin -----------------> 5px
+ * container-size  --------> 100% - (5px * 2)
+ 
+ * TABLET ( >= 768px) 768보다 크면 테블릿 --------------------------------
+ *
+ * fixture -----------------> md (medium)
+ * Number of Columns ------> 12
+ * gutter -----------------> 20px
+ * margin -----------------> 30px
+ * container-size  --------> 100% - (margin * 2) 즉 100 - 60
+ * max-container-size -----> 960px
+
+ * DESKTOP ( >= 1200px) 1200보다 크면 데스크탑 --------------------------------
+ *
+ * fixture -----------------> lg (large)
+ * Number of Columns ------> 12
+ * gutter -----------------> 20px
+ * unit -------------------> 75px
+ * margin -----------------> auto
+ * container-size  --------> 1140px
+ * max-container-size -----> 1140px
+*/
+
+//? gutter 은 sm,md,lg 모두 20px 이므로 공용의 변수.
+
+$gutter: 20px;
+
+//! MOBILE -----------------------------------
+$sm-columns: 4;
+$sm-margin: 5px;
+
+.container {
+  margin: 0 auto;
+  padding: 0 $sm-margin;
+  width: 100%;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .col-sm-1 , .col-md-2 , .col-lg-3
+  // 속성선택자 : ^= 'col-' 로 시작하는 모든 속성을 나타낸다.
+  [class^='col-'] {
+    padding: 0 $gutter / 2;
+  }
+
+  @for $i from 1 through $sm-columns {
+    .col-sm-#{$i} {
+      width: percentage($i / $sm-columns);
+      //? width: $i / $sm-columns * 100%;
+    }
+  }
+
+  //! TABLET -----------------------------------
+  $md-breakpoint: 768px;
+  $md-columns: 12;
+  $md-margin: 30px;
+  $md-max-container: 960px + $md-margin * 2;
+
+  @media screen and (min-width: $md-breakpoint) {
+    max-width: $md-max-container;
+    padding: 0 $md-margin;
+
+    @for $i from 1 through $md-columns {
+      .col-md-#{$i} {
+        width: percentage($i / $md-columns);
+        //? width: $i / $md-columns * 100%;
+      }
+    }
+  }
+
+  //! DESKTOP -----------------------------------
+  $lg-breakpoint: 1200px;
+  $lg-columns: 12;
+  $lg-unit: 75px;
+  $lg-max-container: ($lg-unit + $gutter) * $lg-columns; //? 1140px
+
+  @media screen and (min-width: $lg-breakpoint) {
+    max-width: $lg-max-container;
+    padding: 0; //? unit의 정확한 값이 있기 때문에 margin(padding)의 값이 필요하지 않다.
+
+    @for $i from 1 through $lg-columns {
+      .col-lg-#{$i} {
+        width: ($lg-unit + $gutter) * $i;
+      }
+    }
+  }
+}
