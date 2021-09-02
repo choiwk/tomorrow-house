@@ -3,5 +3,5 @@
 @import './base/fonts';
 @import './base//nomalize';
 @import './base/reset';
-
-$flower: 30;
+@import './mixins/text-style';
+@import './layouts/grids';
