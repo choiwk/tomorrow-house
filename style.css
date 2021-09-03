@@ -415,6 +415,18 @@ a,
 button {
   cursor: pointer; }
 
+span {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: orange; }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 /*
  * MOBILE ( < 768px) 768보다 작으면 모바일 --------------------------------
  *
@@ -516,5 +528,11 @@ button {
         width: 1045px; }
       .container .col-lg-12 {
         width: 1140px; } }
+
+p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: green; }
 
 /*# sourceMappingURL=style.css.map */
