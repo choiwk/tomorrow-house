@@ -14,7 +14,7 @@
   }
 }
 
-@mixin postion-center($type: absolute) {
+@mixin position-center($type: absolute) {
   @if ($type == fixed or $type == absolute) {
     position: $type;
     top: 50%;
@@ -24,5 +24,5 @@
 }
 
 .modal {
-  @include postion-center();
+  @include position-center();
 }

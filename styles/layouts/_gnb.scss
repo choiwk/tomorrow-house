@@ -18,7 +18,7 @@
   }
 
   .logo {
-    @include postion-center;
+    @include position-center;
     a {
       padding: $padding;
       display: block;

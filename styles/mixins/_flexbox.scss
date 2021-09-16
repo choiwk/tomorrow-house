@@ -17,13 +17,13 @@ $flex-map: (
   align-items: _get-flex-value($ai);
 }
 
-@mixin inline-lexbox($jc: center, $ai: center) {
+@mixin inline-flexbox($jc: center, $ai: center) {
   display: inline-flex;
   justify-content: _get-flex-value($jc);
   align-items: _get-flex-value($ai);
 }
 
-@mixin column-lexbox($jc: center, $ai: center) {
+@mixin column-flexbox($jc: center, $ai: center) {
   display: flex;
   flex-direction: column;
   justify-content: _get-flex-value($jc);

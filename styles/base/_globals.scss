@@ -24,7 +24,7 @@
 
 .md-only {
   //? Tablet
-  @media screen and (min-width: $md-breakpoint - 1) {
+  @media screen and (max-width: $md-breakpoint - 1) {
     // md-breakpoint는 768px인데 지금 이 코드는 아무리 커봤자 767px까지 적용되어야 한다.
     display: none !important;
   }
@@ -36,7 +36,7 @@
 
 .lg-only {
   //? Desktop
-  @media screen and (min-width: $lg-breakpoint - 1) {
+  @media screen and (max-width: $lg-breakpoint - 1) {
     // 1199px 까지만
     display: none !important; // display: none을 먹여라 !
   }

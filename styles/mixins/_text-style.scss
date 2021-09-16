@@ -56,7 +56,3 @@
     color: $color;
   }
 }
-
-span {
-  @include text-style(24, orange);
-}
