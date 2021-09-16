@@ -838,10 +838,25 @@ i {
 
 .my-menu {
   position: relative; }
+  .my-menu-button {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #e0e2e7;
+    border-radius: 50%;
+    overflow: hidden; }
+    .my-menu-button:hover, .my-menu-button.is-active {
+      border-color: #3da5f5;
+      transition: border-color 200ms ease-in-out; }
+    .my-menu-button img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .my-menu-content {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    top: 52px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
     border-radius: 4px; }
     .my-menu-content::before, .my-menu-content::after {
@@ -873,6 +888,10 @@ i {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
     width: 100%;
     height: 44px;
     padding: 0 8px;
