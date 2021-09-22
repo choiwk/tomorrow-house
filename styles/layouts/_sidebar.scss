@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .sidebar {
   width: 240px;
   padding: 32px 20px;
@@ -52,6 +56,36 @@
 
     a {
       width: 84px;
+    }
+  }
+
+  &-nav {
+    .drawer-menu {
+      border-top: 1px solid $border;
+
+      &.is-expert {
+        border-bottom: 1px solid $border;
+      }
+    }
+  }
+
+  &-user-menu {
+    margin-top: 16px;
+    .user-menu-list {
+    }
+    .user-menu-item {
+      a {
+        @include flexbox(start);
+        @include text-style(14, $primary);
+        padding: 0 12px;
+        width: 100%;
+        height: 36px;
+        font-weight: 400;
+
+        &:active {
+          color: $blue;
+        }
+      }
     }
   }
 }
