@@ -1,0 +1,25 @@
+.search-modal {
+  position: fixed;
+  padding: 12px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $white;
+  z-index: $search-modal-level;
+
+  &-form {
+    @include flexbox(between);
+
+    .input-group {
+      flex-grow: 1; //! 화면 크기에 따라 input 사이즈가 늘어날 수 있다.
+    }
+
+    .btn-ghost {
+      flex-grow: 0; //! width 56px 사이즈를 고정한다.
+      flex-shrink: 0; //! 어떤 경우에도 56px이다.
+      margin-left: 8px;
+      width: 56px;
+    }
+  }
+}
