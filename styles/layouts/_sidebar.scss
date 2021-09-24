@@ -1,15 +1,22 @@
 .sidebar {
+  $sidebar-width: 240px;
   position: fixed;
   padding: 32px 20px;
   top: 0;
   left: 0;
-  width: 240px;
+  width: $sidebar-width;
   height: 100vh;
   overflow-y: auto;
   overflow: scroll;
   background-color: $white;
   z-index: $sidebar-level;
   overscroll-behavior: contain;
+  transition: transform 300ms ease-in-out;
+  transform: translate3d(-#{$sidebar-width}, 0, 0);
+
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
 
   &-header {
     padding: 0 12px;

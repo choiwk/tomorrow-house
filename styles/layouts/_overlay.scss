@@ -6,4 +6,12 @@
   height: 100vh;
   background-color: rgba($primary, 0.5);
   z-index: $overlay-level;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+  visibility: hidden;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
