@@ -1,11 +1,15 @@
-body {
-  background-color: black;
-}
-
 .sidebar {
-  width: 240px;
+  position: fixed;
   padding: 32px 20px;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow: scroll;
   background-color: $white;
+  z-index: $sidebar-level;
+  overscroll-behavior: contain;
 
   &-header {
     padding: 0 12px;
@@ -87,5 +91,9 @@ body {
         }
       }
     }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
