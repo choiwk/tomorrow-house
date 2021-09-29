@@ -1,4 +1,6 @@
 .lnb {
+  $lnb-height-sm: 40px;
+  $lnb-height-md: 50px;
   $lnb-link-padding: 8px;
   $grid-margin: $sm-margin + $gutter / 2;
   overflow-x: auto;
@@ -8,7 +10,7 @@
     @include inline-flexbox;
     margin-left: -#{$grid-margin};
     padding-left: 7px;
-    height: 40px;
+    height: $lnb-height-sm;
     white-space: nowrap;
     border-bottom: 1px solid $border;
   }
@@ -22,10 +24,31 @@
     a {
       @include inline-flexbox;
       @include text-style(13, $dark);
-      height: 40px;
+      height: $lnb-height-sm;
       padding: 0 $lnb-link-padding;
       font-weight: 700;
       border-bottom: 2px solid transparent;
+    }
+  }
+
+  @include responsive(T) {
+    height: $lnb-height-md;
+    overflow-x: visible;
+    border-bottom: 1px solid $border;
+    &-list {
+      margin-left: 0;
+      padding-left: 0;
+      height: auto;
+      border-bottom: none;
+    }
+    &-item {
+      a {
+        @include text-style(14);
+        height: $lnb-height-md;
+        &:hover {
+          color: $blue;
+        }
+      }
     }
   }
 }
