@@ -1,18 +1,17 @@
 .lnb {
-  $lnb-height-sm: 40px;
-  $lnb-height-md: 50px;
   $lnb-link-padding: 8px;
   $grid-margin: $sm-margin + $gutter / 2;
-  overflow-x: auto;
-  @include no-scrollbar;
 
+  @include no-scrollbar;
+  overflow-x: auto;
+  background-color: $white;
+  border-bottom: 1px solid $border;
   &-list {
     @include inline-flexbox;
     margin-left: -#{$grid-margin};
     padding-left: 7px;
     height: $lnb-height-sm;
     white-space: nowrap;
-    border-bottom: 1px solid $border;
   }
   &-item {
     &.is-active {
