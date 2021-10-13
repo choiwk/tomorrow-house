@@ -2,6 +2,8 @@
 
 오늘의 집 웹페이지를 모티브로하여 김버그 강의를 참고로 진행하였습니다.
 
+3차 프로젝트에서 디자이너 분과 협업 후 부족했던 부분을 보강하고자 시작하였습니다.
+
 ### 구현 단계
 + UI : 모바일,테블릿,데스크탑
 - [x] Header
@@ -13,9 +15,9 @@
 - [x] Footer
 
 ### 대표적인 구현
-1 - [x] Grid System을 이용한 반응형 웹페이지 (모바일, 테블릿, 데스크탑)
+1. Grid System을 이용한 반응형 웹페이지 (모바일, 테블릿, 데스크탑)
 
-2 - [x] 공통 디자인 module 관리 (재사용 가능한 css 구축)
+2. 공통 디자인 module 관리 (재사용 가능한 css 구축)
 + Text-Style(size,color)
 + Typography (font-height, font-weigth, letter-spacing, font-family etc..)
 + @mixin
@@ -31,11 +33,14 @@
   center: center,
 ); 
 
-- [x] 기기에 맞는 디자인 변화
-- [x] Carousel 제품 상세페이지
+3. 기기에 맞는 디자인 변화
+4. Carousel 제품 상세페이지
 
 
-sass에 프로그래밍적 기술 적용.
+<img width="247" alt="스크린샷 2021-10-13 오후 5 20 07" src="https://user-images.githubusercontent.com/77766718/137095163-18dcef20-7675-4337-82a1-9913b155d452.png">
+<img width="242" alt="스크린샷 2021-10-13 오후 5 20 26" src="https://user-images.githubusercontent.com/77766718/137095215-3cbc2e00-aab5-4b60-bc13-71b979c842bb.png">
+
+
 
 ### 1. GNB
 
