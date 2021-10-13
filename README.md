@@ -36,8 +36,8 @@
 3. 기기에 맞는 디자인 변화
 4. Carousel 제품 상세페이지
 
+![alt-text-1](<img width="247" alt="스크린샷 2021-10-13 오후 5 20 07" src="https://user-images.githubusercontent.com/77766718/137095163-18dcef20-7675-4337-82a1-9913b155d452.png"> "title-1") ![alt-text-2]("https://user-images.githubusercontent.com/77766718/137095215-3cbc2e00-aab5-4b60-bc13-71b979c842bb.png" "title-2")
 
-<img width="247" alt="스크린샷 2021-10-13 오후 5 20 07" src="https://user-images.githubusercontent.com/77766718/137095163-18dcef20-7675-4337-82a1-9913b155d452.png">
 <img width="242" alt="스크린샷 2021-10-13 오후 5 20 26" src="https://user-images.githubusercontent.com/77766718/137095215-3cbc2e00-aab5-4b60-bc13-71b979c842bb.png">
 
 
