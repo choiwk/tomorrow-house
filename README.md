@@ -1,5 +1,42 @@
 # 내일의 집
 
+오늘의 집 웹페이지를 모티브로하여 김버그 강의를 참고로 진행하였습니다.
+
+### 구현 단계
++ UI : 모바일,테블릿,데스크탑
+- [x] Header
+- [x] NavBar
+- [x] 목록 페이지
+- [x] 카테고리
+- [x] 검색 페이지
+- [x] 제품 상세페이지
+- [x] Footer
+
+### 대표적인 구현
+1 - [x] Grid System을 이용한 반응형 웹페이지 (모바일, 테블릿, 데스크탑)
+
+2 - [x] 공통 디자인 module 관리 (재사용 가능한 css 구축)
++ Text-Style(size,color)
++ Typography (font-height, font-weigth, letter-spacing, font-family etc..)
++ @mixin
+ + Responsive(모바일,테블릿,데스크탑)
+ + Positions
+ + FlexBox
+  $flex-map: (
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  stretch: stretch,
+  center: center,
+); 
+
+- [x] 기기에 맞는 디자인 변화
+- [x] Carousel 제품 상세페이지
+
+
+sass에 프로그래밍적 기술 적용.
+
 ### 1. GNB
 
 - 로그인 하지 않은 경우
