@@ -36,12 +36,8 @@
 3. 기기에 맞는 디자인 변화
 4. Carousel 제품 상세페이지
 
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/77766718/137095163-18dcef20-7675-4337-82a1-9913b155d452.png" width="230" />
-  <img src="https://user-images.githubusercontent.com/77766718/137095215-3cbc2e00-aab5-4b60-bc13-71b979c842bb.png"" width="230" /> 
-</p>
 
-
+<img width="241" src="https://user-images.githubusercontent.com/77766718/137096199-1980c87a-989a-4cc1-a6dd-3cbcfa1f7542.png"> <img width="239" src="https://user-images.githubusercontent.com/77766718/137096244-b1e9e66a-ffdf-4b1d-9689-9c01594b684c.png">
 
 
 
