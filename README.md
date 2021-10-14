@@ -20,7 +20,7 @@
 2. 공통 디자인 module 관리 (재사용 가능한 css 구축)
 + Text-Style(size,color)
 + Typography (font-height, font-weigth, letter-spacing, font-family etc..)
-+ @mixin
+- @mixin
  + Responsive(모바일,테블릿,데스크탑)
  + Positions
  + FlexBox
