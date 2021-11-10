@@ -4,10 +4,10 @@
 
 3차 프로젝트에서 디자이너 분과 협업 후 부족했던 부분을 보강하고자 시작하였습니다.
 
-## 웹
+## (Grid System) Web
 ![내일의집_시연2](https://user-images.githubusercontent.com/77766718/141097875-315039fc-973f-410c-94c7-302e81f5a211.gif)
 
-## 앱
+## App
 <img width="366" alt="스크린샷 2021-11-10 오후 8 14 39" src="https://user-images.githubusercontent.com/77766718/141103629-9ab16783-d0e3-44cc-9284-739fec339739.png">
 
 ### 구현 단계
