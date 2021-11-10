@@ -4,7 +4,8 @@
 
 3차 프로젝트에서 디자이너 분과 협업 후 부족했던 부분을 보강하고자 시작하였습니다.
 
-![내일의집_시연](https://user-images.githubusercontent.com/77766718/141097106-93d010f3-d13a-44b7-bedb-ffe711e03a20.gif)
+
+![내일의집_시연2](https://user-images.githubusercontent.com/77766718/141097875-315039fc-973f-410c-94c7-302e81f5a211.gif)
 
 
 ### 구현 단계
